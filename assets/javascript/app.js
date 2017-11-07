@@ -1,11 +1,13 @@
 
 
 
+
+
 var searchButtons = ["octopus", "squid", "cuttlefish"];
 
 console.log(searchButtons);
 
-function displayAnimals(){
+$(document).ready(function() {
 
 var animateUrl;
 
@@ -40,7 +42,7 @@ var animal = $(this).attr("data-animal");
           console.log(response);
         };
       });
-    };
+    });
 
       
       function renderButtons() {
@@ -52,6 +54,7 @@ var animal = $(this).attr("data-animal");
         for (var i = 0; i < searchButtons.length; i++) {
 
           var gifButtons = $("<button>");
+          
           gifButtons.addClass("movie");
    
           gifButtons.attr("data-name", searchButtons[i]);
@@ -64,6 +67,7 @@ var animal = $(this).attr("data-animal");
         };
 
       };
+
 
       
 
