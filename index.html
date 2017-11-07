@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script type="text/javascript" src="assets/javascript/game.js"></script>
+	<script type="text/javascript" src="assets/javascript/app.js"></script>
 </head>
 <body>
 
@@ -19,18 +19,23 @@
 	<div id="bestButtons"></div>
 		<div class="row">
 		<h2>Search for GIFs!</h2>
-           <div id="custom-search-input">
+           <form id="custom-search-input">
                             <div class="input-group col-md-12">
-                                <input type="text" class="  search-query form-control" placeholder="Search" />
+                                <input type="text" class="search-query form-control" placeholder="Search" />
                                 <span class="input-group-btn">
                                     <button class="btn btn-danger" type="button">
                                         <span class=" glyphicon glyphicon-search"></span>
                                     </button>
                                 </span>
                             </div>
+                        </form>
                         </div>
+
+
 	</div>
 </div>
+
+				<div class="row" id="gifs" style="display: block;">
 
 
 
@@ -45,7 +50,7 @@
 
 
 
-
+</div>
 
 
 </div>
