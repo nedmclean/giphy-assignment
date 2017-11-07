@@ -58,7 +58,7 @@ var animal = $(this).attr("data-animal");
 
           var gifButtons = $("<button>");
           
-          gifButtons.addClass("movie");
+          gifButtons.addClass("animal-button");
    
           gifButtons.attr("data-name", searchButtons[i]);
 
