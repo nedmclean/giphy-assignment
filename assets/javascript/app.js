@@ -1,8 +1,6 @@
 
 
 
-
-
 var searchButtons = ["octopus", "squid", "cuttlefish"];
 
 console.log(searchButtons);
@@ -10,10 +8,12 @@ console.log(searchButtons);
 $(document).ready(function() {
 
 var animateUrl;
+console.log(searchButtons);
 
 
 var animal = $(this).attr("data-animal");
       var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + animal + "&api_key=dc6zaTOxFJmzC&limit=10";
+      console.log(queryURL);
 
       $.ajax({
         url: queryURL,
@@ -38,17 +38,20 @@ var animal = $(this).attr("data-animal");
           gifDiv.prepend(animalGif);
 
           $("#gifs").prepend(gifDiv);
+          console.log(gifDiv);
           
           console.log(response);
         };
+      
       });
-    });
+   
+   });
 
       
       function renderButtons() {
 
    
-        $("#buttons").empty();
+        $("#gifs").empty();
 
     
         for (var i = 0; i < searchButtons.length; i++) {
@@ -63,6 +66,8 @@ var animal = $(this).attr("data-animal");
         
           $("#buttons").append(gifButtons);
           console.log(gifbuttons);
+
+          console.log(renderButtons);
         
         };
 
